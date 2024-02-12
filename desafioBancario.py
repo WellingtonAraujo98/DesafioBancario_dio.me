@@ -1,13 +1,5 @@
-menu = print(
-'''
-        MENU
-    [1] depositar
-    [2] sacar
-    [3] extrato
-    [4] sair
 
-'''
-)
+
 saldo = 0
 extrato = str(' ')
 opcao = ' '
@@ -15,6 +7,16 @@ numero_saque = 0
 LIMITE_SAQUES = 3
 
 while opcao != '4':
+    print("-*"*20)
+    menu = print(
+        '''
+        MENU
+    [1] depositar
+    [2] sacar
+    [3] extrato
+    [4] sair
+        '''
+    )
     opcao = input("Selecione uma opção: ")
     if opcao == "1":
         valor = float(input("Quantos deseja depositar: "))
@@ -69,6 +71,6 @@ while opcao != '4':
             print(f"   Saldo: R$ {saldo:.2f}")
             
         print("===========================")
-    elif opcao == 4:
+    elif opcao == "4":
         print("Obrigado por utilizar esse sistema")
-        break
+        
